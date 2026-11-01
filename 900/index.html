@@ -33,7 +33,7 @@
             flex-direction: column;
             font: 17px/1.4 Consolas, "Liberation Mono", monospace;
             min-height: 100vh;
-            overflow-x: auto;
+            overflow-x: hidden;
         }
         a { color: inherit; }
 
@@ -179,21 +179,7 @@
         @media (max-width: 430px) {
             .grid { grid-template-columns: 1fr; }
             h1 { font-size: 34px; }
-        } body {
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden !important;
-}
-
-.luffy-image {
-    position: fixed;
-    inset: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: contain;
-    z-index: 99999;
-    background: black;
-}
+        }
     </style>
     <script>
         if (window.applicationCache.status == '0') {
@@ -206,7 +192,7 @@
 </head>
 
 <body onload="if (window.ps4FirmwareSupported) load_exploit();">
-    <div class="app"> <img class="luffy-image" src="luffy.jpg">
+    <div class="app">
         <header class="bar">
             <span><b>PSPULSE</b> // ps4 hosts</span>
             <span class="bar-fw">fw 9.00-9.60 ready</span>
