@@ -179,7 +179,21 @@
         @media (max-width: 430px) {
             .grid { grid-template-columns: 1fr; }
             h1 { font-size: 34px; }
-        }
+        } body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+.luffy-image {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    z-index: 99999;
+    background: black;
+}
     </style>
     <script>
         if (window.applicationCache.status == '0') {
